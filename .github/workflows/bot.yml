@@ -1,4 +1,4 @@
-name: AlgoBot v3.0 RSI+MACD+BB+LLM
+name: AlgoBot v3.0
 
 on:
   schedule:
@@ -19,10 +19,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run AlgoBot v3.0
+      - name: Run bot
         env:
           ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: timeout 840 python bot.py || true
-
