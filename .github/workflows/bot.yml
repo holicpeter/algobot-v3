@@ -1,4 +1,4 @@
-name: AlgoBot v3.0 — RSI+MACD+BB+LLM
+name: AlgoBot v3.0 RSI+MACD+BB+LLM
 
 on:
   schedule:
