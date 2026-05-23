@@ -380,7 +380,7 @@ def main():
                 s3.metric("⚪ HOLD", holds)
 
                 st.dataframe(
-                    df_scan.style.format({"Cena $": "{:.2f}", "MACD": "{:.4f}"}),
+                    df_scan.style.format({"Cena $": "{:.2f}", "RSI": "{:.1f}", "MACD": "{:.4f}"}),
                     use_container_width=True,
                     hide_index=True,
                     height=500
